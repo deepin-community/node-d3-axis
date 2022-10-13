@@ -1,0 +1,32 @@
+Source: node-d3-axis
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends:
+ debhelper-compat (= 12)
+ , nodejs
+ , pkg-js-tools
+ , rollup
+ , node-rollup-plugin-terser
+ , node-tape <!nocheck>
+ , node-jsdom <!nocheck>
+ , node-d3-scale (>= 2.0~) <!nocheck>
+ , node-d3-selection (>= 1.1~) <!nocheck>
+Standards-Version: 4.5.1
+Homepage: https://d3js.org/d3-axis/
+Vcs-Git: https://salsa.debian.org/js-team/node-d3-axis.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-d3-axis
+Testsuite: autopkgtest-pkg-nodejs
+
+Package: node-d3-axis
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Multi-Arch: foreign
+Description: Displays automatic reference lines for scales
+ The axis component renders human-readable reference marks for scales. This
+ alleviates one of the more tedious tasks in visualizing data.
+ .
+ Node.js is an event-based server-side JavaScript engine.

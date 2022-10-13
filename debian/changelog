@@ -1,0 +1,58 @@
+node-d3-axis (1.0.12-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+  * Apply multi-arch hints.
+    + node-d3-axis: Add Multi-Arch: foreign.
+
+  [ Pirate Praveen ]
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+  * Use node-rollup-plugin-terser (now available in the archive)
+  * Enable tests (node-jsdom is now available in the archive)
+  * Use pkg-js-tools auto-install
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 14 Dec 2020 17:25:04 +0530
+
+node-d3-axis (1.0.12-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Make build reproducible
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 08 Jul 2019 12:46:39 +0530
+
+node-d3-axis (1.0.12-1) experimental; urgency=medium
+
+  * New upstream version 1.0.12
+  * Drop dh-buildinfo build dependency (not needed for compat >= 10)
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+  * Switch to upstream rollup.config.js, install ES modules (src directory)
+  * Use pkg-js-tools
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 18 Jun 2019 19:51:04 +0530
+
+node-d3-axis (1.0.8-3) unstable; urgency=medium
+
+  * Build using rollup (webpack use used before rollup was available in main)
+  * Bump debhelper compat to 11
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 28 Feb 2018 19:49:33 +0530
+
+node-d3-axis (1.0.8-2) unstable; urgency=medium
+
+  * Use webpack.config.js to resolve global modules
+  * Don't install es6 files (to avoid warning in some reverse dependencies)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 07 Jan 2018 18:03:58 +0530
+
+node-d3-axis (1.0.8-1) unstable; urgency=low
+
+  * Initial release (Closes: #877994)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 08 Oct 2017 16:24:32 +0530
